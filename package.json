@@ -4,7 +4,7 @@
   "description": "Filter for 11ty to show the number of downloads of a npm package.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/Ryuno-Ki/eleventy-filter-npm-package-downloads/issues"
   },
-  "homepage": "https://github.com/Ryuno-Ki/eleventy-filter-npm-package-downloads#readme"
+  "homepage": "https://github.com/Ryuno-Ki/eleventy-filter-npm-package-downloads#readme",
+  "dependencies": {
+    "axios": "0.18.0"
+  },
+  "devDependencies": {
+    "ava": "1.4.1"
+  }
 }
