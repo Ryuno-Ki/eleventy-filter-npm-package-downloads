@@ -11,6 +11,42 @@ Filter for 11ty to show the number of downloads of a npm package.
 Based on the [work](https://github.com/11ty/eleventy/issues/471#issuecomment-482988986)
 of [@alex-page](https://github.com/alex-page)!
 
+## Installation
+
+That's easy!
+
+```sh
+npm install eleventy-filter-npm-package-downloads
+```
+
+## Usage
+
+Add it to your `.eleventy.js` like so:
+
+```js
+const npmPackageDownloads = require('eleventy-filter-npm-package-downloads');
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addNunjucksAsyncFilter('packageDownloads', async (packageName, callback) => {
+    await npmPackageDownloads(packageName, callback);
+  });
+
+  return {
+    templateFormats: [
+      'html',
+      'md',
+      'njk'
+    ]
+  };
+};
+```
+
+Now you can use it in your layout templates:
+
+```njk
+You've got {{ '@11ty/eleventy' | packageDownloads }} downloads this week!
+```
+
 ## License
 
 MIT. See [LICENSE](./LICENSE)

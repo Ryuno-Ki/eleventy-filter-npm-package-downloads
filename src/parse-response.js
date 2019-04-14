@@ -1,5 +1,5 @@
 module.exports = parseResponse;
 
 function parseResponse (response) {
-  return response.downloads;
+  return response.data.downloads;
 }
