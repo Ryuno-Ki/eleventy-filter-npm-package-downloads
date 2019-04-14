@@ -4,7 +4,11 @@
   "description": "Filter for 11ty to show the number of downloads of a npm package.",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "codecov": "codecov -t $CODECOV_TOKEN",
+    "snyk": "snyk test",
+    "test": "npm run test:ci",
+    "test:ci": "nyc ava --tap | tap-xunit > coverage/junit.xml",
+    "test:coverage": "nyc ava"
   },
   "repository": {
     "type": "git",
@@ -21,10 +25,17 @@
     "url": "https://github.com/Ryuno-Ki/eleventy-filter-npm-package-downloads/issues"
   },
   "homepage": "https://github.com/Ryuno-Ki/eleventy-filter-npm-package-downloads#readme",
+  "peerDependencies": {
+    "@11ty/eleventy": "0.8.x"
+  },
   "dependencies": {
     "axios": "0.18.0"
   },
   "devDependencies": {
-    "ava": "1.4.1"
+    "ava": "1.4.1",
+    "codecov": "3.3.0",
+    "nyc": "13.3.0",
+    "snyk": "1.150.0",
+    "tap-xunit": "2.3.0"
   }
 }
