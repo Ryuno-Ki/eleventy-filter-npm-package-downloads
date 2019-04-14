@@ -5,11 +5,17 @@ const handleError = require('./handle-error.js');
 const parseResponse = require('./parse-response.js');
 
 
-const npmPackageDownloads = async function npmPackageDownloads (packageName) {
+const npmPackageDownloads = async function npmPackageDownloads (packageName, callback) {
   const requestObject = getRequestObject(packageName);
-  return axios(requestObject)
-    .then(parseResponse)
-    .catch(handleError);
+
+  try {
+    const response = await axios(requestObject);
+    const downloads = await parseResponse(response);
+    callback(null, downloads)
+  } catch (reason) {
+    handleError(reason);
+    callback(reason);
+  }
 }
 
 module.exports = npmPackageDownloads;
