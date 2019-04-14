@@ -1,0 +1,24 @@
+{
+  "name": "eleventy-filter-npm-package-downloads",
+  "version": "0.1.0",
+  "description": "Filter for 11ty to show the number of downloads of a npm package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryuno-Ki/eleventy-filter-npm-package-downloads.git"
+  },
+  "keywords": [
+    "eleventy",
+    "filter",
+    "npm downloads"
+  ],
+  "author": "André Jaenisch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ryuno-Ki/eleventy-filter-npm-package-downloads/issues"
+  },
+  "homepage": "https://github.com/Ryuno-Ki/eleventy-filter-npm-package-downloads#readme"
+}
