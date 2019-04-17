@@ -6,7 +6,6 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/Ryuno-Ki/eleventy-filter-npm-package-downloads.svg)](https://greenkeeper.io/)
 ![Maintainability](https://img.shields.io/codeclimate/maintainability/Ryuno-Ki/eleventy-filter-npm-package-downloads.svg?style=popout-square)
 
-
 Filter for 11ty to show the number of downloads of a npm package.
 Based on the [work](https://github.com/11ty/eleventy/issues/471#issuecomment-482988986)
 of [@alex-page](https://github.com/alex-page)!
