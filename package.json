@@ -1,6 +1,6 @@
 {
   "name": "eleventy-filter-npm-package-downloads",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Filter for 11ty to show the number of downloads of a npm package.",
   "main": "index.js",
   "scripts": {
