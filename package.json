@@ -8,7 +8,9 @@
     "snyk": "snyk test",
     "test": "npm run test:ci",
     "test:ci": "nyc ava --tap | tap-xunit > coverage/junit.xml",
-    "test:coverage": "nyc ava"
+    "test:coverage": "nyc ava",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -29,13 +31,14 @@
     "@11ty/eleventy": "0.8.x"
   },
   "dependencies": {
-    "axios": "0.18.0"
+    "axios": "0.18.0",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "ava": "1.4.1",
     "codecov": "3.3.0",
     "nyc": "14.1.0",
-    "snyk": "1.158.0",
     "tap-xunit": "2.3.0"
-  }
+  },
+  "snyk": true
 }
