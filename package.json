@@ -21,6 +21,15 @@
     "filter",
     "npm downloads"
   ],
+  "files": [
+    "src/",
+    "test/",
+    "README.md",
+    "DCO.txt",
+    "LICENSE",
+    "package.json",
+    "index.js"
+  ],
   "author": "André Jaenisch",
   "license": "MIT",
   "bugs": {
