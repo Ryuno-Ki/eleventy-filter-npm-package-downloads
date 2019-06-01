@@ -44,7 +44,7 @@
     "snyk": "^1.168.0"
   },
   "devDependencies": {
-    "ava": "1.4.1",
+    "ava": "2.0.0",
     "codecov": "3.5.0",
     "nyc": "14.1.1",
     "tap-xunit": "2.3.0"
