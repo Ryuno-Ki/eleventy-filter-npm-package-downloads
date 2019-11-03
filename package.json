@@ -37,11 +37,11 @@
   },
   "homepage": "https://github.com/Ryuno-Ki/eleventy-filter-npm-package-downloads#readme",
   "peerDependencies": {
-    "@11ty/eleventy": "0.8.x"
+    "@11ty/eleventy": ">=0.8.x"
   },
   "dependencies": {
     "axios": "0.19.0",
-    "snyk": "^1.234.0"
+    "snyk": "1.241.0"
   },
   "devDependencies": {
     "ava": "2.3.0",
