@@ -40,7 +40,7 @@
     "@11ty/eleventy": ">=0.8.x"
   },
   "dependencies": {
-    "axios": "0.19.0",
+    "axios": "0.20.0",
     "snyk": "1.245.0"
   },
   "devDependencies": {
