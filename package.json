@@ -18,6 +18,7 @@
   },
   "keywords": [
     "eleventy",
+    "eleventy-plugin",
     "filter",
     "npm downloads"
   ],
