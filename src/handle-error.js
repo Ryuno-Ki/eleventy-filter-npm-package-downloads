@@ -1,5 +1,3 @@
-module.exports = handleError;
-
-function handleError (reason) {
+export function handleError (reason) {
   return 'N/A';
 }

@@ -1,11 +1,11 @@
-const axios = require('axios');
+import axios from 'axios';
 
-const getRequestObject = require('./get-request-object.js');
-const handleError = require('./handle-error.js');
-const parseResponse = require('./parse-response.js');
+import { getRequestObject } from './get-request-object.js';
+import { handleError } from './handle-error.js';
+import { parseResponse } from './parse-response.js';
 
 
-const npmPackageDownloads = async function npmPackageDownloads (packageName, callback) {
+export const npmPackageDownloads = async function npmPackageDownloads (packageName, callback) {
   const requestObject = getRequestObject(packageName);
 
   try {
@@ -17,5 +17,3 @@ const npmPackageDownloads = async function npmPackageDownloads (packageName, cal
     callback(reason);
   }
 }
-
-module.exports = npmPackageDownloads;

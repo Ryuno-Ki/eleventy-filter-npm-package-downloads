@@ -1,6 +1,4 @@
-module.exports = getRequestObject;
-
-function getRequestObject (packageName) {
+export function getRequestObject (packageName) {
   const API_ENDPOINT = `https://api.npmjs.org/downloads/point/last-week/${ packageName }`;
 
   return {

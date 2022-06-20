@@ -1,5 +1,5 @@
 import test from "ava";
-import getRequestObject from "../src/get-request-object.js";
+import { getRequestObject } from "../src/get-request-object.js";
 
 
 test("Would make a GET request", async (t) => {

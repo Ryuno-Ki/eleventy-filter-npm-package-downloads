@@ -1,5 +1,5 @@
 import test from "ava";
-import parseResponse from "../src/parse-response.js";
+import { parseResponse } from "../src/parse-response.js";
 
 
 test("Reads the downloads from the response", async (t) => {

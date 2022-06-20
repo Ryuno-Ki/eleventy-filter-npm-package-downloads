@@ -1,5 +1,5 @@
 import test from "ava";
-import handleError from "../src/handle-error.js";
+import { handleError } from "../src/handle-error.js";
 
 
 test("Returns 'N/A' in case of an error", async (t) => {
