@@ -1,17 +1,15 @@
 {
   "name": "eleventy-filter-npm-package-downloads",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Filter for 11ty to show the number of downloads of a npm package.",
   "main": "index.js",
   "scripts": {
-    "prepare": "npm run snyk-protect",
     "snyk": "snyk test",
-    "snyk-protect": "snyk protect",
     "test": "npm run test:ci",
     "test:ci": "nyc ava --tap | tap-xunit > coverage/junit.xml",
     "test:coverage": "nyc ava"
   },
-	"type": "module",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ryuno-Ki/eleventy-filter-npm-package-downloads.git"
@@ -38,16 +36,16 @@
   },
   "homepage": "https://github.com/Ryuno-Ki/eleventy-filter-npm-package-downloads#readme",
   "peerDependencies": {
-    "@11ty/eleventy": ">=0.8.x"
+    "@11ty/eleventy": ">=1.0.x"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "snyk": "^1.954.0"
+    "axios": "0.27.2",
+    "snyk": "1.954.0"
   },
   "devDependencies": {
-    "ava": "^4.3.0",
-    "nyc": "^15.1.0",
-    "tap-xunit": "^2.4.1"
+    "ava": "4.3.0",
+    "nyc": "15.1.0",
+    "tap-xunit": "2.4.1"
   },
   "snyk": true
 }
