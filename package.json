@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "axios": "0.27.2",
-    "snyk": "1.954.0"
+    "snyk": "1.1064.0"
   },
   "devDependencies": {
     "ava": "4.3.0",
