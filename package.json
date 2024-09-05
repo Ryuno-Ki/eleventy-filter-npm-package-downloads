@@ -39,7 +39,7 @@
     "@11ty/eleventy": ">=1.0.x"
   },
   "dependencies": {
-    "axios": "0.27.2",
+    "axios": "1.6.8",
     "snyk": "1.954.0"
   },
   "devDependencies": {
