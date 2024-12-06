@@ -1,3 +1,1 @@
-const npmPackageDownloads = require('./src/npm-package-downloads.js');
-
-module.exports = npmPackageDownloads;
+export { npmPackageDownloads } from './src/npm-package-downloads.js';
