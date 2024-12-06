@@ -5,7 +5,13 @@ import { handleError } from './handle-error.js';
 import { parseResponse } from './parse-response.js';
 
 
-export const npmPackageDownloads = async function npmPackageDownloads (packageName, callback) {
+/**
+ * Expose Eleventy filter for querying NPM for download stats.
+ *
+ * @param {string} packageName
+ * @param {function} callback
+ */
+export async function npmPackageDownloads (packageName, callback) {
   const requestObject = getRequestObject(packageName);
 
   try {
