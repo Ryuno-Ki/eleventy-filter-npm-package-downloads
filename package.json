@@ -43,7 +43,7 @@
     "snyk": "1.1302.1"
   },
   "devDependencies": {
-    "ava": "6.4.1",
+    "ava": "8.0.1",
     "nyc": "18.0.0",
     "tap-xunit": "2.4.1"
   },
