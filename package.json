@@ -40,10 +40,10 @@
   },
   "dependencies": {
     "axios": "1.20.0",
-    "snyk": "1.1302.1"
+    "snyk": "1.1308.2"
   },
   "devDependencies": {
-    "ava": "8.0.1",
+    "ava": "8.1.0",
     "nyc": "18.0.0",
     "tap-xunit": "2.4.1"
   },
